@@ -20,7 +20,10 @@
         <div class="flex gap-8 lg:gap-4 flex-col">
           <h1 class="heading text-7xl">Hey there, i'm<br />rubbie kelvin.</h1>
           <p class="text-2xl">I build things that works</p>
-          <a class="text-base bg-black rounded-md text-white px-5 py-4 w-max">
+          <a
+            :href="resumeLink"
+            class="text-base bg-black rounded-md text-white px-5 py-4 w-max"
+          >
             Download resume
           </a>
         </div>
@@ -41,6 +44,8 @@ import {
 export default defineComponent({
   components: { IconBrandTwitter },
   setup() {
+    const resumeLink =
+      "https://drive.google.com/file/d/13n7cUouin22sQaRwmF0oLP0Cy_LTMViO/view?usp=sharing";
     const links = [
       {
         name: "twitter",
@@ -64,7 +69,7 @@ export default defineComponent({
       },
     ];
 
-    return { links };
+    return { links, resumeLink };
   },
 });
 </script>
