@@ -22,6 +22,7 @@
           <p class="text-2xl">I build things that works</p>
           <a
             :href="resumeLink"
+            target="_blank"
             class="text-base bg-black rounded-md text-white px-5 py-4 w-max"
           >
             Download resume
@@ -45,7 +46,7 @@ export default defineComponent({
   components: { IconBrandTwitter },
   setup() {
     const resumeLink =
-      "https://drive.google.com/file/d/13n7cUouin22sQaRwmF0oLP0Cy_LTMViO/view?usp=sharing";
+      "https://drive.google.com/file/d/1Er3rI6lU2Xvp9vfzuwAvG7hWFdKHPrFO/view?usp=sharing";
     const links = [
       {
         name: "twitter",
